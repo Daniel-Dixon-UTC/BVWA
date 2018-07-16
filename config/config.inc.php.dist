@@ -1,0 +1,32 @@
+<?php
+
+# Database management system to use
+$DBMS = 'MySQL';
+#$DBMS = 'PGSQL'; //Currently Disabled
+
+# Database Variables
+# Database specified will be deleted, so use a db specific for this.
+$_BVWA = array();
+$_BVWA[ 'db_server' ] 	= '127.0.0.1';
+$_BVWA[ 'db_database' ] = 'bvwa';
+$_BVWA[ 'db_user' ] 	= 'root';
+$_BVWA[ 'db_password' ] = 'jeff';//<-- Change this
+
+#PostgreSQL only
+$_BVWA[ 'db_port' ] 	= '5432';
+
+#ReCAPTCHA settings
+#generate keys at https://google.com/recaptcha/admin/create
+$_BVWA[ 'recaptcha_public_key' ] = '';
+$_BVWA[ 'recaptcha_private_key'] = '';
+
+#Default security level
+$_BVWA[ 'default_security_level' ] = 'impossible'; //low/medium/high/impossible.
+
+#Default PHPIDS status
+$_BVWA[ 'default_phpids_level' ] = 'disabled';//enabled/disabled
+
+#Verbose PHPIDS messages
+$_BVWA[ 'default_phpids_verbose' ] = 'false';//true/false
+
+?>
